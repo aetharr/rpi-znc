@@ -33,6 +33,10 @@ COPY ./files/default.conf /home/znc/
 # Make sure that the ZNC user has permission to use the config
 RUN chown znc:znc /home/znc/default.conf
 
+# Actually create the .znc folder with relative permissions
+RUN mkdir -p /home/znc/.znc && \
+    chown znc:znc -Rf /home/znc/.znc
+
 USER znc
 
 WORKDIR /home/znc
