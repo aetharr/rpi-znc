@@ -1,6 +1,7 @@
 This build of ZNC is simple to setup, it already has a config file built in that you can tweak after the fact if you create a volume (Use of a volume is not required, but is recommended).
 
 This has been tested on a Raspberry Pi 3 running Docker 1.11.1
+[Github Repository](https://github.com/aetharr/rpi-znc)
 
 ## Running the bouncer
 `docker run -d -p 8080:8080 aetharr/rpi-znc`
